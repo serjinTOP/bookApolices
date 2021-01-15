@@ -299,6 +299,216 @@ namespace ConsoleApp1
 
                 Console.WriteLine("Valor correto: " + apolice);
             }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Junto)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Liberty)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                string apoliceLiberty = apolice.Replace(".", "").Replace("/", "").Replace("-", "");
+
+                Console.WriteLine("Valor correto: " + apoliceLiberty);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.MapfreSaude)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Mapfre)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                string apoliceMapfre = apolice.Replace(".", "").Replace("/", "").Replace("-", "");
+
+                Console.WriteLine("Valor correto: " + apoliceMapfre);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Newe)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.MetLife)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                string apoliceMetLife = apolice.Substring(0, 5);
+
+                Console.WriteLine("Valor correto: " + apoliceMetLife);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Mitsui)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                string apoliceMitsui = apolice.TrimStart('0');
+
+                Console.WriteLine("Valor correto: " + apoliceMitsui);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Mongeral) ///////////////////// CONFERIR ESTA REGRA
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Nobre)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                string apoliceNobre = apolice.Split("/")[2].TrimStart('0');
+
+                Console.WriteLine("Valor correto: " + apoliceNobre);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.PortoSeguro) //////////////////// CONFERIR ESTA REGRA
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Pottencial)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                string apolicePottencial = "";
+
+                if(apolice.Length == 25)
+                {
+                    if (apolice.Contains("775"))
+                    {
+                        apolicePottencial = apolice.Split("775").Last().Substring(0, 7);
+                    }
+                    else if (apolice.Contains("776"))
+                    {
+                        apolicePottencial = apolice.Split("776").Last().Substring(0, 7);
+                    }
+                    else if (apolice.Contains("746"))
+                    {
+                        apolicePottencial = apolice.Split("746").Last().Substring(0, 7);
+                    }
+                }
+                else
+                {
+                    apolicePottencial = apolice.Split("-").Last();
+                }
+
+                Console.WriteLine("Valor correto: " + apolicePottencial);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Sancor)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Sompo)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Starr)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Suhai)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.SulAmerica)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                if(apolice.Length < 7)
+                {
+                    Console.WriteLine("Valor correto: " + apolice);
+                }
+                else
+                {
+                    string apoliceSulamerica = apolice.Substring(apolice.Length - 7);
+                    Console.WriteLine("Valor correto: " + apoliceSulamerica);
+                }
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Sura)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.SwissRe)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.TokioMarine) ////////////////////// CONFERIR ESTA REGRA
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Too)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                if(apolice.Length == 24)
+                {
+                    string apoliceToo = apolice.Substring(apolice.Length - 12);
+                    Console.WriteLine("Valor correto: " + apoliceToo);
+                }
+                else
+                {
+                    Console.WriteLine("Valor correto: " + apolice);
+                }
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.SwissRe)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Travelers)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                Console.WriteLine("Valor correto: " + apolice);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.XL)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+
+                string apoliceXL = apolice.Replace(".", "").Replace("/", "").Replace("-", "").TrimStart('0');
+
+                Console.WriteLine("Valor correto: " + apoliceXL);
+            }
+            else if (codSeguradora == (int)BookApolices.Seguradoras.Zurich)
+            {
+                Console.WriteLine("Valor original: " + apolice);
+                
+                if(apolice.Length == 7)
+                {
+                    Console.WriteLine("Valor correto: " + apolice);
+                }
+                else if (apolice.Contains("."))
+                {
+                    string apoliceZurich = apolice.Split(".").Last().TrimStart('0');
+
+                    Console.WriteLine("Valor correto: " + apoliceZurich);
+                }
+                else
+                {
+                    string apoliceZurich = apolice.Split(".").Last().TrimStart('0');
+
+                    Console.WriteLine("Valor correto: " + apoliceZurich);
+                }
+
+            }
         }
     }
 }

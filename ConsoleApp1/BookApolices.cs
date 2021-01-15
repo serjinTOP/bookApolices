@@ -56,6 +56,7 @@ namespace ConsoleApp1
             Sura = 6751,
             SwissRe = 5991,
             TokioMarine = 6190,
+            Travelers = 3727,
             Too = 6653,
             XL = 1431,
             Zurich = 5495
